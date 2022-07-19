@@ -8,6 +8,7 @@ public class TutorFinderApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TutorFinderApplication.class, args);
+		System.out.println("Successfully Running");
 	}
 
 }

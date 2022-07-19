@@ -1,14 +1,16 @@
 package com.example.tutor_finder.bean;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "parent")
 @Getter
 @Setter
+@Entity
+@Table(name = "parent")
 public class Parent {
 
     @Id
@@ -19,7 +21,7 @@ public class Parent {
     private String city;
     private Long pincode;
     private String area;
-    private String child_name;
+    private String childName;
     private String subject;
     private String standard;
     private Long mob_no;
