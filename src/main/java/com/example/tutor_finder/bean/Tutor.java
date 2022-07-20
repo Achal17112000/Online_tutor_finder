@@ -4,12 +4,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Time;
 
-@Entity
-@Table(name="tutor")
 @Getter
 @Setter
+@Entity
+@Table(name="tutor")
 public class Tutor {
 
     //Attributes of tutor table
@@ -24,7 +23,7 @@ public class Tutor {
     private int experience;
     private long mob_no;
     private String subject;
-    private Time time_slots;
+    private float timeSlots;
     private String emailId;
     private String username;
     private String password;
