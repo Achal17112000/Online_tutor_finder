@@ -18,6 +18,6 @@ public class Admin {
     private String adminName;
     private String username;
     private String password;
-    private String addEbooks;
+
 
 }
