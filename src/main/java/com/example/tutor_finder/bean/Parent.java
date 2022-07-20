@@ -15,22 +15,22 @@ public class Parent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long parentId;
+    private Long parentId;  //Parent unique id
 
+    //Parent details
     private String name;
     private String city;
     private Long pincode;
     private String area;
     private String childName;
     private String subject;
-    private String standard;
+    private String standard;  // class in which child is studying
     private Long mob_no;
     private String username;
     private String password;
     private String emailId;
-    private float rating;
+    private float rating;       // rating for the tutor
     private String bookTutor;
-
 
 
 }
