@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -25,9 +27,12 @@ public class Tutor {
     private String subject;
     private float timeSlots;
     private String emailId;
-    private String username;
+    private String username;    //set same as email id
     private String password;
     private String checkBooking;
     private String checkRating;
+
+    @ManyToMany(mappedBy = "tutorList")
+    private List<Parent> parentList = new ArrayList<>();
 
 }

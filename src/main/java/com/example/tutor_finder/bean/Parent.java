@@ -1,11 +1,15 @@
 package com.example.tutor_finder.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Getter
 @Setter
@@ -32,5 +36,8 @@ public class Parent {
     private float rating;       // rating for the tutor
     private String bookTutor;
 
+    // Mapping the column of this table
+    @ManyToMany
+    private List<Tutor> tutorList = new ArrayList<>();
 
 }

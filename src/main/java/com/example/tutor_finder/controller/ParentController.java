@@ -1,5 +1,6 @@
 package com.example.tutor_finder.controller;
 
+import com.example.tutor_finder.Exception.NotFoundException;
 import com.example.tutor_finder.bean.Parent;
 import com.example.tutor_finder.services.ParentService;
 import org.springframework.beans.factory.annotation.Autowired;
